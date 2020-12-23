@@ -27,10 +27,23 @@ img {
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  position: relative;
+}
+.address-mail::after {
+  /* создание полосочки псевдоэлемента*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 .stidio-nav {
+  position: relative;
 }
+
 .navigation {
   display: flex;
   align-items: center;
@@ -45,13 +58,13 @@ img {
 .header .navigation-logo {
 }
 .address-mail {
-  margin-left: 93px;
   outline: none;
 }
 .navigation-list-item {
   margin-left: 50px;
   text-decoration: none;
   outline: none;
+  position: relative;
 }
 .address-footer {
   display: flex;
@@ -427,6 +440,7 @@ img {
   color: #2196f3;
   text-decoration: none;
   outline: none;
+  padding-right: 93px;
 }
 .navigation-logo-footer {
   width: 145px;
