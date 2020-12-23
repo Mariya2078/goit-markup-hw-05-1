@@ -41,6 +41,19 @@ img {
   border-radius: 2px;
   transform: translateY(36px);
 }
+.navigation-list-item-portion::after {
+  /* создание полосочки псевдоэлемента*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  transform: translateY(36px);
+}
 .stidio-nav {
   position: relative;
 }
@@ -48,6 +61,9 @@ img {
   transition: color 250ms /*cubic-bezier(0.4.0, 0.2, 1)*/;
 }
 .navigation-list-item {
+  transition: color 250ms /*cubic-bezier(0.4.0, 0.2, 1)*/;
+}
+..navigation-list-item-portion {
   transition: color 250ms /*cubic-bezier(0.4.0, 0.2, 1)*/;
 }
 .mail {
@@ -85,6 +101,12 @@ img {
   outline: none;
   position: relative;
 }
+.navigation-list-item-portion {
+  margin-left: 50px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+}
 .address-footer {
   display: flex;
   align-items: center;
@@ -107,7 +129,8 @@ img {
 
 .navigation-list-item,
 .navigation-list-item-port,
-.navigation-list-item-in {
+.navigation-list-item-in,
+.navigation-list-item-portion {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -773,6 +796,10 @@ img {
 
 .navigation-list-item:hover,/*hover for e-mail address*/
 .navigation-list-item:focus {
+  color: #2196f3;
+}
+.navigation-list-item-portion:hover,/*hover for e-mail address*/
+.navigation-list-item-portion:focus {
   color: #2196f3;
 }
 .mail {
