@@ -29,7 +29,6 @@ img {
   padding-bottom: 30px;
 }
 .address-mail::after {
-  /* создание полосочки псевдоэлемента*/
   content: "";
   position: absolute;
   width: 100%;
@@ -42,7 +41,6 @@ img {
   transform: translateY(36px);
 }
 .navigation-list-item-portion::after {
-  /* создание полосочки псевдоэлемента*/
   content: "";
   position: absolute;
   width: 100%;
@@ -58,6 +56,9 @@ img {
   position: relative;
 }
 .address-mail {
+  transition: color 250ms /*cubic-bezier(0.4.0, 0.2, 1)*/;
+}
+.address-mail-folio {
   transition: color 250ms /*cubic-bezier(0.4.0, 0.2, 1)*/;
 }
 .navigation-list-item {
@@ -93,6 +94,9 @@ img {
 .header .navigation-logo {
 }
 .address-mail {
+  outline: none;
+}
+.address-mail-folio {
   outline: none;
 }
 .navigation-list-item {
@@ -143,6 +147,7 @@ img {
 }
 
 .address-mail,
+.address-mail-folio,
 .header-phone {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -156,6 +161,10 @@ img {
 
 .address-mail:hover,/*hover for e-mail address*/
 .address-mail:focus {
+  color: #2196f3;
+}
+.address-mail-folio:hover,/*hover for e-mail address*/
+.address-mail-.address-mail-folio {
   color: #2196f3;
 }
 
@@ -272,6 +281,7 @@ img {
 
 .photo-work {
   padding-right: 30px;
+  position: relative;
 }
 
 /*OUR prpcess, our peple*/
@@ -1063,4 +1073,24 @@ img {
 .client-items-link:hover .client-photo,
 .client-items-link:focus .client-photo {
   color: #2196f3;
+}
+.advance {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  margin 0: auto;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  top:225px;
 }
